@@ -1,8 +1,8 @@
 # nd2reader
 
-### This library is no longer supported
+### This library is no longer being developed here
 
-There is an [actively-developed fork](https://github.com/rbnvrw/nd2reader) which may be preferable to this version, though the latest version on PyPI is still using this codebase for the moment. I am no longer supporting this library, as my lab has discovered [Micro-Manager](https://micro-manager.org/) and found it to be a far superior application for acquiring microscope data. I would highly recommend switching if it works for what you're doing. I will not be accepting pull requests any longer. 
+There is an [actively-developed fork](https://github.com/rbnvrw/nd2reader) which may be preferable to this version, and version 3+ installed with pip is based on that codebase. If your code depends on this version of nd2reader, you can specify the final version with `pip install "nd2reader==2.1.3"`. I am no longer supporting this library, as my lab has discovered [Micro-Manager](https://micro-manager.org/) and found it to be a far superior application for acquiring microscope data. I would highly recommend switching if it works for what you're doing. I will not be accepting pull requests any longer. 
 
 ### About
 
@@ -16,9 +16,9 @@ There is an [actively-developed fork](https://github.com/rbnvrw/nd2reader) which
 
 If you don't already have the packages `numpy`, `six` and `xmltodict`, they will be installed automatically:
 
-`pip3 install nd2reader` for Python 3.x
+`pip3 install "nd2reader==2.1.3"` for Python 3.x
 
-`pip install nd2reader` for Python 2.x
+`pip install "nd2reader==2.1.3"` for Python 2.x
 
 `nd2reader` is an order of magnitude faster in Python 3. I recommend using it unless you have no other choice.
 
@@ -123,19 +123,9 @@ The `Nd2` object has some programmatically-accessible metadata:
 0.22
 ```
 
-### Contributing
-
-If you'd like to help with the development of nd2reader or just have an idea for improvement, please see the [contributing](https://github.com/jimrybarski/nd2reader/blob/master/CONTRIBUTING.md) page
-for more information.
-
-### Bug Reports and Features
-
-If this fails to work exactly as expected, please open an [issue](https://github.com/jimrybarski/nd2reader/issues).
-If you get an unhandled exception, please paste the entire stack trace into the issue as well.
-
 ### Citation
 
-You can cite nd2reader in your research if you want:
+You can cite nd2reader in your research if you want (note that I am not responsible for version 3+):
 
 ```
 Rybarski, Jim (2015): nd2reader. figshare.
